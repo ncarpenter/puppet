@@ -3,4 +3,8 @@ class puppet {
  source => 'puppet:///modules/puppet/papply.sh',
  mode => '0755',
  }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/master
