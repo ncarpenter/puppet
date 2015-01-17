@@ -1,3 +1,3 @@
-node 'cookbook2' {
+node 'cookbook1', 'cookbook2' {
 	include puppet 
 }
