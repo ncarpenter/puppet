@@ -17,7 +17,7 @@ class puppet {
  ensure => 'present',
  user => 'ubuntu',
  command => '/usr/local/bin/pull-updates',
- minute => '*/10',
+ minute => '*/1',
  hour => '*',
  }
 }
