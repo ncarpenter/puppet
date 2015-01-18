@@ -1,3 +1,3 @@
-node 'cookbook1', 'cookbook2' {
+node cookbook\d+/ {
 	include memcached
 }
