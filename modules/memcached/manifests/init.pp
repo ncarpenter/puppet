@@ -1,7 +1,7 @@
 #MAnage memcached
 
 class memcached {
-  package { 'memcached' }:
+  package { 'memcached' :
     ensure => installed,
 }
 
