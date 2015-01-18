@@ -1,3 +1,3 @@
-node 'ccokbook1', 'cookbook2' {
+node /cookbook.*/ {
 	include memcached
 }
