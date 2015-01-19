@@ -1,4 +1,4 @@
-class adminusers {
+class user::adminusers {
 
 group {'admin':
 ensure => present,
