@@ -11,6 +11,13 @@ class puppet {
    source => 'puppet:///modules/puppet/centos.priv',
    mode   => '0600',
  }
+ file {'/etc/puppet/hiera':
+   ensure => directory,
+ }
+ file {'/etc/puppet/hiera.yaml'
+   source  => 'puppet:///modules/puppet/hiera.yaml',
+   require => File['/etc/puppet/hiera'],
+ }
 
  cron { 'run-puppet':
  ensure => 'present',
