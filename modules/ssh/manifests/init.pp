@@ -1,12 +1,12 @@
 #Manage SSH
 class ssh {
-	service { 'ssh':
+	service { 'sshd':
 	ensure => running,
 	}
 
 file { '/etc/ssh/sshd_config':
   source => 'puppet:///modules/ssh/sshd_config',
-  notify => Service['ssh'],
+  notify => Service['sshd'],
   owner  => 'root',
   group  => 'root',
   }
