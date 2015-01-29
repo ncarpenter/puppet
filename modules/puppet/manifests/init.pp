@@ -9,6 +9,7 @@ class puppet {
  }
  file { '/home/centos/.ssh/id_rsa':
    source => 'puppet:///modules/puppet/centos.priv',
+   mode   => '0600',
  }
 
  cron { 'run-puppet':
