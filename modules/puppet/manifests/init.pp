@@ -7,15 +7,13 @@ class puppet {
  source => 'puppet:///modules/puppet/pull-updates.sh',
  mode => '0755',
  }
-
- file { '/home/ubuntu/.ssh/id_rsa':
- source => 'puppet:///modules/puppet/ubuntu.priv',
- owner => 'ubuntu',
- mode => '0600',
+ file { '/home/centos/.ssh/id_rsa':
+   source => 'puppet:///modules/puppet/centos.priv',
  }
+
  cron { 'run-puppet':
  ensure => 'present',
- user => 'ubuntu',
+ user => 'centos',
  command => '/usr/local/bin/pull-updates',
  minute => '*/1',
  hour => '*',
