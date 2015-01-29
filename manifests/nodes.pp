@@ -1,4 +1,4 @@
-node /*ec2*/ {
+node /ip*/ {
+	include memcached
 	include ssh
-	include user::adminusers
 }
