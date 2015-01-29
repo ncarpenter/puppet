@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo puppet apply /home/ubuntu/puppet/manifests/site.pp --modulepath /home/ubuntu/puppet/modules/ $*
+sudo puppet apply /home/centos/puppet/manifests/site.pp --modulepath /home/centos/puppet/modules/ $*
