@@ -1,4 +1,4 @@
 node /ip*/ {
-	include memcached
+	include puppet
 	include ssh
 }
