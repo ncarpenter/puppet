@@ -15,7 +15,7 @@ class puppet {
    ensure => directory,
  }
  file {'/etc/puppet/hiera.yaml':
-   source  => 'puppet:///modules/puppet/hiera.yaml',
+   source  => 'puppet:///modules/puppet/hiera/hiera.yaml',
    require => File['/etc/puppet/hiera'],
  }
 
